@@ -9,7 +9,8 @@ This report describes my analysis of the provided network.
 The network represents the structure of an enzyme; the nodes are the atoms it is composed of, and the edges are the interactions (chemical or physical) that exist between those atoms. [Figure 1](#fig:graph) is a visual representation of the network. 
 
 <div id="fig:graph"></div>
-![A network with 51 nodes and 110 edges.](network_visual_representation.png)  
+![A network with 51 nodes and 110 edges.](network_visual_representation.png)
+
 *Figure 1. A visual representation of the network.*
 
 **Note**: The representation used throughout this report is obtained using the `spring_layout` function with seed = 2 and 20 iterations.
@@ -19,6 +20,7 @@ The network represents the structure of an enzyme; the nodes are the atoms it is
 First, I analysed the network from a topological perspective; the result are in [Table 1](#table:properties).
 
 <div id="table:properties"></div>
+
 | Property | Value |
 | --- | ------ |
 | Number of nodes (N) | 51 |
@@ -30,7 +32,7 @@ First, I analysed the network from a topological perspective; the result are in 
 | Average Path Length | 5.0424 |
 | Network Diameter | 12 |
 
-*Basic topological properties of the network*
+*Table 1. Basic topological properties of the network*
 
 
 
@@ -38,7 +40,9 @@ Afterwards, I computed the histogram of the network's degree distribution ([Figu
 **Note**: while a histogram is generally not a good representation of the degree distribution, due to the small range of degree values, it is more representative for this network.
 
 <div id="fig:histogram"></div>
-![Histogram of the network's degree distribution](histogram.png)  
+
+![Histogram of the network's degree distribution](histogram.png)
+
 *Figure 2. Histogram of the network's degree distribution*
 
 ### Higher-order properties of the network
@@ -58,6 +62,7 @@ Plotting the ANND shows that the network has an assortative tendency, meaning it
 A more detailed analysis is available in the Network_Analysis_notebook.ipynb file.
 
 <div id="fig:centralities"></div>
+
 ![The degree, closeness, betweenness, and eigenvector centralities of the network](centralities.png)
 
 *Figure 3. The degree, closeness, betweenness, and eigenvector centralities of the network*
