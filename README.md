@@ -6,9 +6,10 @@ by [@CatrinaB](https://github.com/CatrinaB)
 
 This report describes my analysis of the provided network.
 
-The network represents the structure of an enzyme; the nodes are the atoms it is composed of, and the edges are the interactions (chemical or physical) that exist between those atoms. [Figure 1](#fig:graph) is a visual representation of the network. 
+The network represents the structure of an enzyme; the nodes are the atoms it is composed of, and the edges are the interactions (chemical or physical) that exist between those atoms. [Figure 1](#fig-graph) is a visual representation of the network. 
 
-<div id="fig:graph"></div>
+<div id="fig-graph"></div>
+
 ![A network with 51 nodes and 110 edges.](./network_visual_representation.png)
 
 *Figure 1. A visual representation of the network.*
@@ -17,9 +18,9 @@ The network represents the structure of an enzyme; the nodes are the atoms it is
 
 ### Basic properties of the network
 
-First, I analysed the network from a topological perspective; the result are in [Table 1](#table:properties).
+First, I analysed the network from a topological perspective; the results are in [Table 1](#table-properties).
 
-<div id="table:properties"></div>
+<div id="table-properties"></div>
 
 | Property | Value |
 | --- | ------ |
@@ -36,10 +37,10 @@ First, I analysed the network from a topological perspective; the result are in 
 
 
 
-Afterwards, I computed the histogram of the network's degree distribution ([Figure 2](#fig:histogram)). It is obvious that the network is not scale-free, because it does not have a heavy-tailed distribution.  
+Afterwards, I computed the histogram of the network's degree distribution ([Figure 2](#fig-histogram)). It is obvious that the network is not scale-free, because it does not have a heavy-tailed distribution.  
 **Note**: while a histogram is generally not a good representation of the degree distribution, due to the small range of degree values, it is more representative for this network.
 
-<div id="fig:histogram"></div>
+<div id="fig-histogram"></div>
 
 ![Histogram of the network's degree distribution](./histogram.png)
 
@@ -57,11 +58,11 @@ Plotting the ANND shows that the network has an assortative tendency, meaning it
 
 #### Centrality
 
-[Figure 3](#fig:centralities) shows the degree, closeness, betweenness, and eigenvector centralities of the network. Investigating them revealed that the network has a dense, self-reinforcing core, a centralised information flow, and a vulnerable structure: eliminating only two nodes (25 and 35 or 8 and 26) severely disrupts the network's ability to disseminate information from its central nodes to the periphery and metaphorically splits it into two components, one with only a few very important nodes, and one with many unimportant ones.
+[Figure 3](#fig-centralities) shows the degree, closeness, betweenness, and eigenvector centralities of the network. Investigating them revealed that the network has a dense, self-reinforcing core, a centralised information flow, and a vulnerable structure: eliminating only two nodes (25 and 35 or 8 and 26) severely disrupts the network's ability to disseminate information from its central nodes to the periphery and metaphorically splits it into two components, one with only a few very important nodes, and one with many unimportant ones.
 
-A more detailed analysis is available in the Network_Analysis_notebook.ipynb file.
+A more detailed analysis is available in the [Network_Analysis_notebook.ipynb](https://github.com/CatrinaB/Network-Science-Assignment/blob/main/Network_Analysis_notebook.ipynb) file.
 
-<div id="fig:centralities"></div>
+<div id="fig-centralities"></div>
 
 ![The degree, closeness, betweenness, and eigenvector centralities of the network](./centralities.png)
 
