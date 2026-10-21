@@ -9,7 +9,7 @@ This report describes my analysis of the provided network.
 The network represents the structure of an enzyme; the nodes are the atoms it is composed of, and the edges are the interactions (chemical or physical) that exist between those atoms. [Figure 1](#fig:graph) is a visual representation of the network. 
 
 <div id="fig:graph"></div>
-![A network with 51 nodes and 110 edges.](network_visual_representation.png)
+![A network with 51 nodes and 110 edges.](./network_visual_representation.png)
 
 *Figure 1. A visual representation of the network.*
 
@@ -41,7 +41,7 @@ Afterwards, I computed the histogram of the network's degree distribution ([Figu
 
 <div id="fig:histogram"></div>
 
-![Histogram of the network's degree distribution](histogram.png)
+![Histogram of the network's degree distribution](./histogram.png)
 
 *Figure 2. Histogram of the network's degree distribution*
 
@@ -63,7 +63,7 @@ A more detailed analysis is available in the Network_Analysis_notebook.ipynb fil
 
 <div id="fig:centralities"></div>
 
-![The degree, closeness, betweenness, and eigenvector centralities of the network](centralities.png)
+![The degree, closeness, betweenness, and eigenvector centralities of the network](./centralities.png)
 
 *Figure 3. The degree, closeness, betweenness, and eigenvector centralities of the network*
 
