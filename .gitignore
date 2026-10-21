@@ -4,3 +4,7 @@ env/
 __pycache__/
 *.pyc
 .vscode/
+Catrina_Bodean_-_Network_Analysis_report.pdf
+*.json
+*.html
+gen_edgelist.txt
